@@ -1,0 +1,25 @@
+-- Tabla Categoria
+
+CREATE TABLE categoria (
+    idcateg INT AUTO_INCREMENT PRIMARY KEY,
+    categoria VARCHAR(255) NOT NULL
+);
+
+-- Tabla marcas
+
+CREATE TABLE marcas (
+    idmarca INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(255) NOT NULL
+);
+
+-- Tabla productos con ForeignKey
+
+CREATE TABLE productos (
+    idprod INT AUTO_INCREMENT PRIMARY KEY,
+    idcategoria INT,
+    idmarca INT,
+    descripcion VARCHAR(255) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (idcategoria) REFERENCES categoria(idcateg),
+    FOREIGN KEY (idmarca) REFERENCES marcas(idmarca)
+);

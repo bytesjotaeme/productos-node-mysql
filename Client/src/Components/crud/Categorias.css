@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 10px;
+}
+.button5 {background-color: #555555;}
+
+.input{
+    background: silver;
+    border: 1px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
